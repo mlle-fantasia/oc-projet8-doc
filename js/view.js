@@ -44,7 +44,7 @@
 	 * Supprime une todo. récupère l'élément du DOM qui a un data attribut "data-id" égale à "id" passé en paramettre <br>
 	 * si l'élément existe bien, il est supprimé
 	 *
-	 * @param {number} id l'id de la todo.
+	 * @param {number} id L'id de la todo.
 	 *
 	 */
 	View.prototype._removeItem = function (id) {
@@ -61,9 +61,9 @@
 	};
 
 	/**
-	 * Met à jour le filtre des todo qui se trouve dans le footer en fonction de la route reçue en paramettre
+	 * Met à jour le filtre des todos qui se trouve dans le footer en fonction de la route reçue en paramettre
 	 *
-	 * @param {string} currentPage  la route  : '' | 'active' | 'completed'
+	 * @param {string} currentPage  La route  : '' | 'active' | 'completed'
 	 *
 	 */
 	View.prototype._setFilter = function (currentPage) {
@@ -73,10 +73,10 @@
 
 	/**
 	 * Récupère l'élément du DOM qui a un data attribut "data-id" égale à "id" passé en paramettre et si l'élément existe,
-	 * change sa classe et son statut
+	 * change sa classe et son statut pour qu'elle apparaisse en completed ou non
 	 *
-	 * @param {number} id  id de la todo
-	 * @param {boolean} completed statut completed ou non de la todo
+	 * @param {number} id  Id de la todo
+	 * @param {boolean} completed Statut completed ou non de la todo
 	 *
 	 */
 	View.prototype._elementComplete = function (id, completed) {
@@ -96,8 +96,8 @@
 	 * Récupère l'élément du DOM qui a un data attribut "data-id" égale à "id" passé en paramettre et si l'élément existe,
 	 * met la todo en mode édition : ajoute une classe et crée un élément input avec le focus
 	 *
-	 * @param {number} id  id de la todo
-	 * @param {string} title titre de la todo
+	 * @param {number} id  Id de la todo
+	 * @param {string} title Titre de la todo
 	 *
 	 */
 	View.prototype._editItem = function (id, title) {
@@ -121,8 +121,8 @@
 	 * Récupère l'élément du DOM qui a un data attribut "data-id" égale à "id" passé en paramettre et si l'élément existe,
 	 * met la todo en mode lecture : change la classe et supprime l'élément input avec le focus
 	 *
-	 * @param {number} id  id de la todo
-	 * @param {string} title titre de la todo
+	 * @param {number} id  Id de la todo
+	 * @param {string} title Titre de la todo
 	 *
 	 */
 	View.prototype._editItemDone = function (id, title) {
@@ -192,10 +192,10 @@
 		viewCommands[viewCmd]();
 	};
 	/**
+	 * Renvoie l'id du parent de l'élément passé en paramètre. L'id de la todo cliquée
 	 *
-	 *
-	 *
-	 * @param {object} element un element du DOM
+	 * @param {object} element Un element du DOM
+	 * @returns {number} L'id
 	 *
 	 */
 	View.prototype._itemId = function (element) {

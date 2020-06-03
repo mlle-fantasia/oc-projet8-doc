@@ -13,8 +13,8 @@
 
 	/**
 	 *
-	 * Crée un store dans le localstorage du client avec une collection de todo vide s'il n'est existe pas déjà.
-	 * Store utilise des callbacks car il n'y a pas de base de donée mais si non il faudrait utiliser des appel ajax
+	 * Crée un store dans le localstorage du client avec un tableau de todos (vide s'il n'existait pas).
+	 * Store utilise des callbacks car il n'y a pas de base de donée mais si non il faudrait utiliser des appels ajax
 	 *
 	 * @param {string} name Nom de la base de donnée
 	 * @param {function} callback Le callback

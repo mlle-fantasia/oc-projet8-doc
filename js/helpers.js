@@ -1,7 +1,7 @@
 /*global NodeList */
 /**
  *
- * Le helper crée des variables globales utiles qui pouront être utilisée dans toute l'application
+ * Le helper crée des variables globales utiles qui pouront être utilisées dans toute l'application
  *
  * @module Helpers
  * @memberOf module:Helpers
@@ -11,9 +11,8 @@
 (function (window) {
 	("use strict");
 
-	// Get element(s) by CSS selector:
 	/**
-	 * Crée un racourci querySelector
+	 * Crée un racourci querySelector. Vous pourrez sélectionner un élément en faisant : qs(".nom-de-la-classe")
 	 *
 	 * @param {object} selector  Le sélecteur
 	 * @param {object} scope  Le container où querysélectionner l'élément
@@ -26,11 +25,11 @@
 		return (scope || document).querySelector(selector);
 	};
 	/**
-	 * Crée un racourci querySelectorAll
+	 * Crée un racourci querySelectorAll. la même chose pour sélectionner tous les éléments d'une classe.
 	 *
 	 * @param {object} selector  Le sélecteur
 	 * @param {object} scope  Le container où querysélectionner les éléments
-	 * @returns les éléments du DOM demandés
+	 * @returns Les éléments du DOM demandés
 	 *
 	 *
 	 */
@@ -38,9 +37,8 @@
 		return (scope || document).querySelectorAll(selector);
 	};
 
-	// addEventListener wrapper:
 	/**
-	 * Ajoute un eventListener
+	 * Ajoute un eventListener sur l'élément demandé
 	 *
 	 * @param {string} target  Le sélecteur
 	 * @param {string} type  Le type d'évènement ex : 'click', 'keyup' ...
@@ -52,8 +50,15 @@
 		target.addEventListener(type, callback, !!useCapture);
 	};
 
-	// Attach a handler to event for all elements that match the selector,
-	// now or in the future, based on a root element
+	/**
+	 * Attache un callback à un evenement sur tous les éléments demandés
+	 *
+	 * @param {string} target  Le sélecteur
+	 * @param {string} selector  Selecteur présent à l'intérieur du premier sélecteur
+	 * @param {string} type  Le type d'évènement ex : 'click', 'keyup' ...
+	 * @param {function} handler  Le callback de l'évènement
+	 *
+	 */
 	window.$delegate = function (target, selector, type, handler) {
 		function dispatchEvent(event) {
 			var targetElement = event.target;
@@ -71,13 +76,13 @@
 		window.$on(target, type, dispatchEvent, useCapture);
 	};
 
-	// Find the element's parent with the given tag name:
-	// $parent(qs('a'), 'div');
 	/**
-	 * trouve le parent de l'élement passé en paramettre et le renvoie ex : $parent(qs('a'), 'div');
+	 * Trouve le parent de l'élément passé en paramettre et le renvoie
 	 *
-	 * @param {string} element  Le sélecteur
-	 * @param {string} tagName
+	 * @param {string} element Le sélecteur
+	 * @param {string} tagName Le selecteur du parent que l'on veux récupérer
+	 * @exemple $parent(qs('a'), 'div');
+	 * @returns renvoie l'élément parent
 	 *
 	 */
 	window.$parent = function (element, tagName) {

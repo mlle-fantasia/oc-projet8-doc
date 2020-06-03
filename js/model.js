@@ -11,10 +11,10 @@
 	("use strict");
 
 	/**
-	 * Creates a new Model instance and hooks up the storage.
+	 * Le model va s'occuper de d'appeler le store pour créer, lire, mettre à jour et supprimer les todo.
 	 *
 	 * @constructor
-	 * @param {object} storage une instance du localstoge du client
+	 * @param {object} storage Une instance du localstoge du client
 	 * @memberOf module:Model
 	 */
 	function Model(storage) {
@@ -22,7 +22,7 @@
 	}
 
 	/**
-	 * Crée une nouvelle todo et l'a transmet au store pour l'enregistrer, une fois fait, le callback est exécuté
+	 * Crée une nouvelle todo et la transmet au store pour l'enregistrer, une fois fait, le callback est exécuté
 	 *
 	 * @param {string} title Le titre de la todo
 	 * @param {function} callback Le callback
@@ -90,7 +90,7 @@
 	};
 
 	/**
-	 * Suprime toutes les todo du store
+	 * Suprime toutes les todos du store
 	 *
 	 * @param {function} callback Le callback
 	 */
@@ -99,7 +99,7 @@
 	};
 
 	/**
-	 * Compte les todos qui se trouvent dans le store, les active les completed et toutes
+	 * Compte les todos qui se trouvent dans le store, les "active" les "completed" et toutes
 	 *
 	 * @param {function} callback Le callback
 	 * @returns {object} un objet avec les trois comptes dedans

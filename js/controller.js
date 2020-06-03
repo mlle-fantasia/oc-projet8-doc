@@ -16,8 +16,8 @@
 	 * C'est à dire que c'est lui qui va appeler les méthodes de la view et du model pour les mettre à jour
 	 *
 	 * @constructor
-	 * @param {object} model  l'instance de model
-	 * @param {object} view  l'instance de vue
+	 * @param {object} model  L'instance de model
+	 * @param {object} view  L'instance de vue
 	 * @memberOf module:Controller
 	 *
 	 */
@@ -61,9 +61,9 @@
 
 	/**
 	 *
-	 * Point d'entrée de l'application, elle reçoit la route de mandé en paramettre et appelle d'autres fonctions pour afficher la page
+	 * Point d'entrée de l'application, elle reçoit la route demandée en paramettre et appelle d'autres fonctions pour afficher la page
 	 *
-	 * @param {string} locationHash la route demandée : '' | 'active' | 'completed'
+	 * @param {string} locationHash La route demandée : '' | 'active' | 'completed'
 	 */
 	Controller.prototype.setView = function (locationHash) {
 		var route = locationHash.split("/")[1];
@@ -72,7 +72,7 @@
 	};
 
 	/**
-	 * lit toutes les todos existantes et les affiche
+	 * Lit toutes les todos existantes et appelle la vue pour les afficher
 	 *
 	 *
 	 */
@@ -84,7 +84,7 @@
 	};
 
 	/**
-	 * lit toutes les todos actives et les affiche
+	 * Lit toutes les todos actives et appelle la vue pour les afficher
 	 *
 	 */
 	Controller.prototype.showActive = function () {
@@ -96,7 +96,7 @@
 	};
 
 	/**
-	 * lit toutes les todos completed et les affiche
+	 * Lit toutes les todos completed et appelle la vue pour les afficher
 	 *
 	 */
 	Controller.prototype.showCompleted = function () {
@@ -107,7 +107,7 @@
 	};
 
 	/**
-	 * crée une nouvelle todo, vide le champs titre et filtre les todos (avec this._filter)
+	 * Crée une nouvelle todo, vide le champs titre et filtre les todos (avec this._filter)
 	 * Si le titre est vide, la todo n'est pas ajoutée
 	 *
 	 * @param {string} title Le titre de la todo
@@ -126,7 +126,7 @@
 	};
 
 	/**
-	 * mettre la todo en mode édition : lit la todo dans le model et transmet les info à la vue pour qu'elle passe en mode edition
+	 * Mettre la todo en mode édition : lit la todo dans le model et transmet les infos à la vue pour qu'elle passe en mode édition
 	 *
 	 * @param {number} id L'id de la todo qui doit être éditée
 	 */
@@ -141,7 +141,7 @@
 	 * Met à jour une todo avec un nouveau titre, si le nouveau titre est vide, la todo est supprimée
 	 *
 	 * @param {number} id L'id de la todo
-	 * @param {string} title le nouveau titre de la todo
+	 * @param {string} title Le nouveau titre de la todo
 	 */
 	Controller.prototype.editItemSave = function (id, title) {
 		console.log("title", title);
@@ -158,7 +158,7 @@
 	};
 
 	/**
-	 * Cancels the item editing mode.
+	 * Met une todo en mode lecture : lit la todo dans le model et transmet les infos à la vue pour qu'elle passe en mode lecture
 	 *
 	 * @param {number} id L'id de la todo
 	 */
@@ -217,9 +217,9 @@
 	 * Met à jour le statut completed ou non d'une todo dans le localstorage et dans la vue
 	 *
 	 *
-	 * @param {number} id l'id de la todo à changer de statut
-	 * @param {boolean} completed statut de la todo 'completed' ou non
-	 * @param {boolean|undefined} silent si undefined re-filtre les todos
+	 * @param {number} id L'id de la todo à changer de statut
+	 * @param {boolean} completed Statut de la todo 'completed' ou non
+	 * @param {boolean|undefined} silent Si undefined re-filtre les todos
 	 */
 	Controller.prototype.toggleComplete = function (id, completed, silent) {
 		var self = this;
@@ -238,7 +238,7 @@
 	/**
 	 * Met à jour les todos toutes à "completed" ou toutes à "active"
 	 *
-	 * @param {boolean} completed false si certaines todos "completed" et d'autres non ou toutes non | true si toutes "completed"
+	 * @param {boolean} completed False si certaines todos "completed" et d'autres non ou toutes non | true si toutes "completed"
 	 */
 	Controller.prototype.toggleAll = function (completed) {
 		var self = this;
@@ -278,7 +278,7 @@
 	 *
 	 * Filtre les todos en fonction de la route : <br>
 	 * met à jour les éléments de la page (les éléments qui se trouvent dans le footer) <br>
-	 * si la dernière active route n'est pas all ou que la route à changé, on met à jour la vue avec les bonnes todos
+	 * si la dernière route n'était pas all ou que la route à changé, on met à jour la vue avec les bonnes todos
 	 *
 	 * @param {boolean|undefined} force  forces la mise à jour ds todos.
 	 */
