@@ -9,6 +9,6 @@
 		"jsdoc": "^3.6.4"
 	},
 	"scripts": {
-		"doc": "rm -rf out && jsdoc readme.md -c ./conf.json js/* "
+		"doc": "rm -rf docs && jsdoc readme.md -c ./conf.json js/* -d docs "
 	}
 }
