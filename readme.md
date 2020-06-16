@@ -2,9 +2,9 @@
 
 Cette application de todolist offre plusieurs fonctionnalités qui simplifira votre quotidien.
 
--   Ajouter des tâches
--   Ajouter des tâches
--   Ajouter des tâches
+-   Lister les tâches
+-   Ajouter / modifier / Supprimer des tâches
+-   Cocher des tâches
 -   Filtrer les tâches selon leur état
 
 #### 1. Ajouter des tâches
