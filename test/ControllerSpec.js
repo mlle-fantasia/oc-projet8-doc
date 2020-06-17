@@ -94,7 +94,7 @@ describe("controller", function () {
 
 			subject.setView("#/active");
 
-			expect(view.render).toHaveBeenCalledWith("showEntres", [todo]);
+			expect(view.render).toHaveBeenCalledWith("showEntries", [todo]);
 		});
 
 		it("should show completed entries", function () {

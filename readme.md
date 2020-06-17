@@ -15,7 +15,7 @@ Nous pouvons apercevoir le champ de saisie dans lequel il est indiqué 'Que deve
 
 <img src="images/todo4.png" alt="" width="700">
 
-Pour ajouter une tâche, cliquez dans le champ de saisie puis nommez votre tâche (ici 'Doner à manger au chat de la voisine').Pressez ensuite la touche entrée pour ajouter la tâche à la liste.
+Pour ajouter une tâche, cliquez dans le champ de saisie puis nommez votre tâche (ici 'Donner à manger au chat de la voisine'). Pressez ensuite la touche entrée ou cliquez sur la petite flèche à gauche du champ pour ajouter la tâche à la liste.
 
 ### 2. Modifier une tâche
 
@@ -25,7 +25,7 @@ Double-cliquez sur la tâche à modifier. Un encadré gris s'affiche alors, vous
 
 ### 3. Compléter des tâches
 
-<img src="images/todo6.png" alt="" width="700">
+<img src="images/todo12.png" alt="" width="700">
 
 Vous pouvez cliquer sur le cercle à gauche de la tâche, ce qui fera apparaître une coche verte et grisera le titre de la tâche. De cette manière, vous changerez l'état de la tâche (ce sur quoi nous reviendrons en dernière partie de cette documentation).
 
