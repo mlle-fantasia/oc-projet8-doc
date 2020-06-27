@@ -25,7 +25,7 @@ Double-cliquez sur la tâche à modifier. Un encadré gris s'affiche alors, vous
 
 ### 3. Compléter des tâches
 
-<img src="images/todo12.png" alt="" width="700">
+<img src="images/todo6.png" alt="" width="700">
 
 Vous pouvez cliquer sur le cercle à gauche de la tâche, ce qui fera apparaître une coche verte et grisera le titre de la tâche. De cette manière, vous changerez l'état de la tâche (ce sur quoi nous reviendrons en dernière partie de cette documentation).
 
@@ -35,7 +35,7 @@ Vous pouvez aussi cocher toutes les tâches en même temps en cochant le cercle 
 
 ### 4. Supprimer une tâche
 
-<img src="images/todo9.png" alt="" width="700">
+<img src="images/todo7.png" alt="" width="700">
 
 Lors du passage du curseur sur la tâche en question, une croix rouge s'affiche sur la droite. En cliquant dessus, la tâche sera supprimée automatiquement. Vous pouvez aussi cliquer sur le bouton 'Supprimer les faites' en bas à droite, ce qui aura pour effet de supprimer toutes les tâches cochées, ici : 'Donner à manger au chat de la voisine'.
 
