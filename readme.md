@@ -35,7 +35,7 @@ Vous pouvez aussi cocher toutes les tâches en même temps en cochant le cercle 
 
 ### 4. Supprimer une tâche
 
-<img src="images/todo7.png" alt="" width="700">
+<img src="images/todo9.png" alt="" width="700">
 
 Lors du passage du curseur sur la tâche en question, une croix rouge s'affiche sur la droite. En cliquant dessus, la tâche sera supprimée automatiquement. Vous pouvez aussi cliquer sur le bouton 'Supprimer les faites' en bas à droite, ce qui aura pour effet de supprimer toutes les tâches cochées, ici : 'Donner à manger au chat de la voisine'.
 
